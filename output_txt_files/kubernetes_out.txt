@@ -1,1 +1,22 @@
-<paste log output from Kubernetes-mediated prediction, here>
+When a prediction is made after the pod is running
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+
+When `run_kubernetes.sh` is run
+
+(.udacity_devops_3.7) ➜  4_operational_micro_services git:(master) ✗ ./run_kubernetes.sh           
+pod/udacity-p4 created
+NAME         READY   STATUS              RESTARTS   AGE
+udacity-p4   0/1     ContainerCreating   0          0s
+waiting 10 seconds for pod to start
+Forwarding from 0.0.0.0:8080 -> 80
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
